@@ -1,0 +1,30 @@
+<html manifest = "manifest.appcache">
+	<head>
+		<script src="static/multi.js"></script>
+		<script src="static/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/cards.css">
+		<link rel="stylesheet" type="text/css" href="static/multi.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div id="banner">
+			<div id ="player1" class="playerinfo">
+				<h4 id="playername1">Test</h4>
+				<h5 id="player1score">0</h5>
+			</div>
+			<div id ="player2" class="playerinfo">
+				<h4 id="playername2">Test</h4>
+				<h5 id="player2score">0</h5>
+			</div>
+
+			<button class= "control_button" type="button" onclick="save_game();">Save</button>
+			<button class= "control_button" type="button" onclick="load_game();">Load</button>
+
+		</div>
+		<div class="sideBox"></div>
+		<div id="test"></div>
+		<audio class = "clap" src="static/applause.ogg" ></audio>
+		<audio class = 'flip' src="static/flip_card.mp3" ></audio>
+		<audio class = 'ping' src="static/finish.mp3" ></audio>
+	</body>
+</html>

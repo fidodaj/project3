@@ -1,0 +1,36 @@
+<html manifest = "manifest.appcache">
+	<head>
+		<script src="static/cards.js"></script>
+		<script src="static/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/cards.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div id = "controls">
+			<h1>Card Game!</h1>
+			<div id= "user_info">
+				
+			</div>
+			<div id="attempt_info">
+				
+			</div>
+			
+			
+			<div id= "buttons">
+				
+				<button class= "control_button" type="button" onclick="save_game();">Save</button>
+				<button class= "control_button" type="button" onclick="load_game();">Load</button>
+			</div>
+
+			<div id="turns">
+				<h3>Turns remaining</h3>
+				<p class="remains"></p>
+			</div>
+		</div>
+		<div class="sideBox"></div>
+		<div id="test"></div>
+		<audio class = "clap" src="static/applause.ogg" ></audio>
+		<audio class = 'flip' src="static/flip_card.mp3" ></audio>
+		<audio class = 'ping' src="static/finish.mp3" ></audio>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html manifest = "manifest.appcache">
+<head>
+	<script src="static/cards2.js"></script>
+	<script src="static/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/cards.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+		function submit_names (argument) {
+		var player1 = nameform.player1.value;
+		var player2 = nameform.player2.value;
+		var names= {player1:player1,player2:player2}
+		localStorage.playernames = JSON.stringify(names);
+		window.location.href="/multi";
+}
+	</script>
+</head>
+<body>
+<div id="banner">
+	<h1>Welcome to the card game</h1>
+</div>
+<div id="sidebox">
+	<div id="names">
+		<h3>Enter player names</h3>
+		<form name="nameform">
+		Player 1: <input type="text" name="player1" value="" placeholder="">
+		Player 2: <input type="text" name="player2" value="" placeholder="">
+		</form>
+		<button onclick="submit_names();">Submit</button>
+	</div>
+</div>
+</body>
+</html>

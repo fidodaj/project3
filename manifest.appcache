@@ -1,0 +1,18 @@
+CACHE MANIFEST
+
+manifest.appcache
+static/cards.js
+static/jquery.js
+static/cards.css
+static/flip.wav
+static/clap.wav
+static/ping.wav
+static/multi.js
+static/multi.css
+
+
+FALLBACK:
+
+
+NETWORK:
+*
